@@ -25,6 +25,14 @@ module.exports = {
                     'sass-loader'
                 ],
             },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: 'asset/resource',
+            },
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/i,
+                type: 'asset/resource',
+            },
         ]
     },
     plugins: [
@@ -36,5 +44,6 @@ module.exports = {
     output: {
         filename: './js/[name].js',
         path: resolve(__dirname, 'dist'),
+        assetModuleFilename: './dist/imgs/[hash][ext][query]'
     }
 };
