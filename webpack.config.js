@@ -4,7 +4,7 @@ const { CheckerPlugin } = require('awesome-typescript-loader');
 module.exports = {
     entry: {
         global: "./scripts/global.ts",
-        homepage: "./scripts/pages/homepage.ts",
+        index: "./scripts/pages/index.ts",
     },
     resolve: {
         extensions: ['.ts']
